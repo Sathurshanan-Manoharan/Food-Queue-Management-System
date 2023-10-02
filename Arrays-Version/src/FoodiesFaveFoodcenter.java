@@ -195,8 +195,8 @@ public class FoodiesFaveFoodcenter {
             try{
                 System.out.print("Enter the " +displayMessageQueueOrRow+ " number you want to "+displayMessageAddOrRemove+" the customer : ");
                 number = Integer.parseInt(input.next());     //Getting input
-                if (number < 0){
-                    System.out.println("Warning! "+displayMessageQueueOrRow+" number cannot be less than 0.");
+                if (number <= 0){
+                    System.out.println("Warning! "+displayMessageQueueOrRow+" number cannot be less than or equal to 0.");
                 }else{
                     isCorrectInput = false;
                 }
